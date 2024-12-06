@@ -1,0 +1,70 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #5A1A32, #A8A8AA);
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Container for Centering */
+  .container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Stylish Title */
+  .title {
+    font-size: 3rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #D6ADAD, #5F4E4A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGlow 3s infinite alternate;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Text Glow Animation */
+  @keyframes textGlow {
+    0% {
+      text-shadow: 0 0 10px #ff6a00, 0 0 20px #ff6a00, 0 0 30px #ee0979;
+    }
+    100% {
+      text-shadow: 0 0 20px #ff6a00, 0 0 30px #ee0979, 0 0 40px #ff6a00;
+    }
+  }
+  
+  /* Fade-in Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
